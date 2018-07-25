@@ -4,8 +4,7 @@ import UIKit
 
 public extension UIViewController {
   func inViewLifecycle(_ ƒ: ()->Void) {
-    let _ = view
-    viewDidLoad()
+    let _ = view //Loads view. Also triggers `viewDidLoad`
     viewWillAppear(false)
     viewDidAppear(false)
     ƒ()

@@ -20,30 +20,35 @@ fileprivate class ControllerWithLifecycle: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    precondition(!viewDidLoadTriggered)
     viewDidLoadTriggered = true
   }
   
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
+    precondition(!viewWillAppearTriggered)
     viewWillAppearTriggered = true
   }
   
   
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
+    precondition(!viewDidAppearTriggered)
     viewDidAppearTriggered = true
   }
   
   
   override func viewWillDisappear(_ animated: Bool) {
     super.viewWillAppear(animated)
+    precondition(!viewWillDisappearTriggered)
     viewWillDisappearTriggered = true
   }
   
   
   override func viewDidDisappear(_ animated: Bool) {
     super.viewDidDisappear(animated)
+    precondition(!viewDidDisappearTriggered)
     viewDidDisappearTriggered = true
   }
 }
