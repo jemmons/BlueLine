@@ -20,6 +20,17 @@ class BlueLineTests: XCTestCase {
     EQ(1, 1)
     EQ("hello", "hello")
     EQ(1, 1, "message")
+    EQ(0.1 + 0.2, 0.3, accuracy: 0.3.ulp)
+    EQ(0.1 + 0.2, 0.3, accuracy: 0.3.ulp, "message")
+  }
+  
+  
+  func testNotEqual() {
+    NOTEQ(1, 2)
+    NOTEQ("hello", "goodbye")
+    NOTEQ(1, 2, "message")
+    NOTEQ(0.1 + 0.2, 0.4, accuracy: 0.3.ulp)
+    NOTEQ(0.1 + 0.2, 0.4, accuracy: 0.3.ulp, "message")
   }
   
   
