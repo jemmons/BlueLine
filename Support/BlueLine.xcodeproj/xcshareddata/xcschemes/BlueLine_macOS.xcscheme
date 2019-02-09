@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1010"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C17207C920BDF80D005860BD"
-               BuildableName = "BlueLine.framework"
-               BlueprintName = "BlueLine"
+               BlueprintIdentifier = "737F7779220F93500078871B"
+               BuildableName = "BlueLine_macOS.framework"
+               BlueprintName = "BlueLine_macOS"
                ReferencedContainer = "container:BlueLine.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C17207D220BDF80D005860BD"
-               BuildableName = "BlueLineTests.xctest"
-               BlueprintName = "BlueLineTests"
+               BlueprintIdentifier = "737F7781220F93500078871B"
+               BuildableName = "BlueLineTests_macOS.xctest"
+               BlueprintName = "BlueLineTests_macOS"
                ReferencedContainer = "container:BlueLine.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C17207C920BDF80D005860BD"
-            BuildableName = "BlueLine.framework"
-            BlueprintName = "BlueLine"
+            BlueprintIdentifier = "737F7779220F93500078871B"
+            BuildableName = "BlueLine_macOS.framework"
+            BlueprintName = "BlueLine_macOS"
             ReferencedContainer = "container:BlueLine.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C17207C920BDF80D005860BD"
-            BuildableName = "BlueLine.framework"
-            BlueprintName = "BlueLine"
+            BlueprintIdentifier = "737F7779220F93500078871B"
+            BuildableName = "BlueLine_macOS.framework"
+            BlueprintName = "BlueLine_macOS"
             ReferencedContainer = "container:BlueLine.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,9 +82,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C17207C920BDF80D005860BD"
-            BuildableName = "BlueLine.framework"
-            BlueprintName = "BlueLine"
+            BlueprintIdentifier = "737F7779220F93500078871B"
+            BuildableName = "BlueLine_macOS.framework"
+            BlueprintName = "BlueLine_macOS"
             ReferencedContainer = "container:BlueLine.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

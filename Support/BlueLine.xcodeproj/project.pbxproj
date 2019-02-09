@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		737F7783220F93500078871B /* BlueLine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 737F777A220F93500078871B /* BlueLine.framework */; };
+		737F7791220F93810078871B /* AssertAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17207E920BF1550005860BD /* AssertAliases.swift */; };
+		737F7793220F93810078871B /* UserDefaults+Fake.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17207F320BF55EC005860BD /* UserDefaults+Fake.swift */; };
+		737F7794220F93850078871B /* AssertAliasesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17207E620BF1484005860BD /* AssertAliasesTests.swift */; };
+		737F7796220F93850078871B /* UserDefaultsPersistentDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17207F520BF572B005860BD /* UserDefaultsPersistentDomainTests.swift */; };
 		C17207D420BDF80D005860BD /* BlueLine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C17207CA20BDF80D005860BD /* BlueLine.framework */; };
 		C17207E820BF1488005860BD /* AssertAliasesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17207E620BF1484005860BD /* AssertAliasesTests.swift */; };
 		C17207EA20BF1550005860BD /* AssertAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17207E920BF1550005860BD /* AssertAliases.swift */; };
@@ -17,6 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		737F7784220F93500078871B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C17207C120BDF80D005860BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 737F7779220F93500078871B;
+			remoteInfo = BlueLine_macOS;
+		};
 		C17207D520BDF80D005860BD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C17207C120BDF80D005860BD /* Project object */;
@@ -27,8 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		737F777A220F93500078871B /* BlueLine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BlueLine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		737F7782220F93500078871B /* BlueLineTests_macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueLineTests_macOS.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17207CA20BDF80D005860BD /* BlueLine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BlueLine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C17207D320BDF80D005860BD /* BlueLineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueLineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C17207D320BDF80D005860BD /* BlueLineTests_iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueLineTests_iOS.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17207E620BF1484005860BD /* AssertAliasesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssertAliasesTests.swift; sourceTree = "<group>"; };
 		C17207E920BF1550005860BD /* AssertAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssertAliases.swift; sourceTree = "<group>"; };
 		C17207EC20BF159C005860BD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -39,6 +53,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		737F7777220F93500078871B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		737F777F220F93500078871B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				737F7783220F93500078871B /* BlueLine.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C17207C620BDF80D005860BD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -71,7 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				C17207CA20BDF80D005860BD /* BlueLine.framework */,
-				C17207D320BDF80D005860BD /* BlueLineTests.xctest */,
+				C17207D320BDF80D005860BD /* BlueLineTests_iOS.xctest */,
+				737F777A220F93500078871B /* BlueLine.framework */,
+				737F7782220F93500078871B /* BlueLineTests_macOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,6 +140,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		737F7775220F93500078871B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C17207C720BDF80D005860BD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -119,9 +157,45 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		C17207C920BDF80D005860BD /* BlueLine */ = {
+		737F7779220F93500078871B /* BlueLine_macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C17207DE20BDF80D005860BD /* Build configuration list for PBXNativeTarget "BlueLine" */;
+			buildConfigurationList = 737F778B220F93500078871B /* Build configuration list for PBXNativeTarget "BlueLine_macOS" */;
+			buildPhases = (
+				737F7775220F93500078871B /* Headers */,
+				737F7776220F93500078871B /* Sources */,
+				737F7777220F93500078871B /* Frameworks */,
+				737F7778220F93500078871B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlueLine_macOS;
+			productName = BlueLine_macOS;
+			productReference = 737F777A220F93500078871B /* BlueLine.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		737F7781220F93500078871B /* BlueLineTests_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 737F778E220F93500078871B /* Build configuration list for PBXNativeTarget "BlueLineTests_macOS" */;
+			buildPhases = (
+				737F777E220F93500078871B /* Sources */,
+				737F777F220F93500078871B /* Frameworks */,
+				737F7780220F93500078871B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				737F7785220F93500078871B /* PBXTargetDependency */,
+			);
+			name = BlueLineTests_macOS;
+			productName = BlueLine_macOSTests;
+			productReference = 737F7782220F93500078871B /* BlueLineTests_macOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C17207C920BDF80D005860BD /* BlueLine_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C17207DE20BDF80D005860BD /* Build configuration list for PBXNativeTarget "BlueLine_iOS" */;
 			buildPhases = (
 				C17207C520BDF80D005860BD /* Sources */,
 				C17207C620BDF80D005860BD /* Frameworks */,
@@ -132,14 +206,14 @@
 			);
 			dependencies = (
 			);
-			name = BlueLine;
+			name = BlueLine_iOS;
 			productName = BlueLine;
 			productReference = C17207CA20BDF80D005860BD /* BlueLine.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C17207D220BDF80D005860BD /* BlueLineTests */ = {
+		C17207D220BDF80D005860BD /* BlueLineTests_iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C17207E120BDF80D005860BD /* Build configuration list for PBXNativeTarget "BlueLineTests" */;
+			buildConfigurationList = C17207E120BDF80D005860BD /* Build configuration list for PBXNativeTarget "BlueLineTests_iOS" */;
 			buildPhases = (
 				C17207CF20BDF80D005860BD /* Sources */,
 				C17207D020BDF80D005860BD /* Frameworks */,
@@ -150,9 +224,9 @@
 			dependencies = (
 				C17207D620BDF80D005860BD /* PBXTargetDependency */,
 			);
-			name = BlueLineTests;
+			name = BlueLineTests_iOS;
 			productName = BlueLineTests;
-			productReference = C17207D320BDF80D005860BD /* BlueLineTests.xctest */;
+			productReference = C17207D320BDF80D005860BD /* BlueLineTests_iOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -161,10 +235,16 @@
 		C17207C120BDF80D005860BD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Joshua Emmons";
 				TargetAttributes = {
+					737F7779220F93500078871B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					737F7781220F93500078871B = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					C17207C920BDF80D005860BD = {
 						CreatedOnToolsVersion = 9.3.1;
 						LastSwiftMigration = 0930;
@@ -186,13 +266,29 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C17207C920BDF80D005860BD /* BlueLine */,
-				C17207D220BDF80D005860BD /* BlueLineTests */,
+				C17207C920BDF80D005860BD /* BlueLine_iOS */,
+				C17207D220BDF80D005860BD /* BlueLineTests_iOS */,
+				737F7779220F93500078871B /* BlueLine_macOS */,
+				737F7781220F93500078871B /* BlueLineTests_macOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		737F7778220F93500078871B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		737F7780220F93500078871B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C17207C820BDF80D005860BD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -210,6 +306,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		737F7776220F93500078871B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				737F7791220F93810078871B /* AssertAliases.swift in Sources */,
+				737F7793220F93810078871B /* UserDefaults+Fake.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		737F777E220F93500078871B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				737F7794220F93850078871B /* AssertAliasesTests.swift in Sources */,
+				737F7796220F93850078871B /* UserDefaultsPersistentDomainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C17207C520BDF80D005860BD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -233,14 +347,127 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		737F7785220F93500078871B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 737F7779220F93500078871B /* BlueLine_macOS */;
+			targetProxy = 737F7784220F93500078871B /* PBXContainerItemProxy */;
+		};
 		C17207D620BDF80D005860BD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C17207C920BDF80D005860BD /* BlueLine */;
+			target = C17207C920BDF80D005860BD /* BlueLine_iOS */;
 			targetProxy = C17207D520BDF80D005860BD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		737F778C220F93500078871B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = D4565GL3HE;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcmxcix.BlueLine;
+				PRODUCT_NAME = BlueLine;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		737F778D220F93500078871B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = D4565GL3HE;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcmxcix.BlueLine;
+				PRODUCT_NAME = BlueLine;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		737F778F220F93500078871B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = D4565GL3HE;
+				INFOPLIST_FILE = "Tests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mcmxcix.BlueLine-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		737F7790220F93500078871B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = D4565GL3HE;
+				INFOPLIST_FILE = "Tests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mcmxcix.BlueLine-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 		C17207DC20BDF80D005860BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -383,7 +610,7 @@
 					"@loader_path/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mcmxcix.BlueLine;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = BlueLine;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -413,7 +640,7 @@
 					"@loader_path/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mcmxcix.BlueLine;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = BlueLine;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -461,6 +688,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		737F778B220F93500078871B /* Build configuration list for PBXNativeTarget "BlueLine_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				737F778C220F93500078871B /* Debug */,
+				737F778D220F93500078871B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		737F778E220F93500078871B /* Build configuration list for PBXNativeTarget "BlueLineTests_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				737F778F220F93500078871B /* Debug */,
+				737F7790220F93500078871B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C17207C420BDF80D005860BD /* Build configuration list for PBXProject "BlueLine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -470,7 +715,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C17207DE20BDF80D005860BD /* Build configuration list for PBXNativeTarget "BlueLine" */ = {
+		C17207DE20BDF80D005860BD /* Build configuration list for PBXNativeTarget "BlueLine_iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C17207DF20BDF80D005860BD /* Debug */,
@@ -479,7 +724,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C17207E120BDF80D005860BD /* Build configuration list for PBXNativeTarget "BlueLineTests" */ = {
+		C17207E120BDF80D005860BD /* Build configuration list for PBXNativeTarget "BlueLineTests_iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C17207E220BDF80D005860BD /* Debug */,
