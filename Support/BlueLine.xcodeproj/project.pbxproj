@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		737F7783220F93500078871B /* BlueLine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 737F777A220F93500078871B /* BlueLine.framework */; };
 		737F7791220F93810078871B /* AssertAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17207E920BF1550005860BD /* AssertAliases.swift */; };
 		737F7793220F93810078871B /* UserDefaults+Fake.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17207F320BF55EC005860BD /* UserDefaults+Fake.swift */; };
-		737F7794220F93850078871B /* AssertAliasesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17207E620BF1484005860BD /* AssertAliasesTests.swift */; };
-		737F7796220F93850078871B /* UserDefaultsPersistentDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17207F520BF572B005860BD /* UserDefaultsPersistentDomainTests.swift */; };
+		737F77A4221096E20078871B /* BlueLine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 737F777A220F93500078871B /* BlueLine.framework */; };
+		73DC4192221AF09100E75AEE /* XCTestCase+Expect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DC4191221AF09100E75AEE /* XCTestCase+Expect.swift */; };
+		73DC4193221AF09100E75AEE /* XCTestCase+Expect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DC4191221AF09100E75AEE /* XCTestCase+Expect.swift */; };
+		73DC4195221AF88600E75AEE /* XCTestCaseExpectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DC4194221AF88600E75AEE /* XCTestCaseExpectTests.swift */; };
+		73DC4196221AF88600E75AEE /* XCTestCaseExpectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DC4194221AF88600E75AEE /* XCTestCaseExpectTests.swift */; };
 		C17207D420BDF80D005860BD /* BlueLine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C17207CA20BDF80D005860BD /* BlueLine.framework */; };
 		C17207E820BF1488005860BD /* AssertAliasesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17207E620BF1484005860BD /* AssertAliasesTests.swift */; };
 		C17207EA20BF1550005860BD /* AssertAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17207E920BF1550005860BD /* AssertAliases.swift */; };
@@ -22,7 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		737F7784220F93500078871B /* PBXContainerItemProxy */ = {
+		737F77A5221096E20078871B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C17207C120BDF80D005860BD /* Project object */;
 			proxyType = 1;
@@ -40,7 +42,9 @@
 
 /* Begin PBXFileReference section */
 		737F777A220F93500078871B /* BlueLine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BlueLine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		737F7782220F93500078871B /* BlueLineTests_macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueLineTests_macOS.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		737F779F221096E20078871B /* BlueLineTests_macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueLineTests_macOS.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		73DC4191221AF09100E75AEE /* XCTestCase+Expect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Expect.swift"; sourceTree = "<group>"; };
+		73DC4194221AF88600E75AEE /* XCTestCaseExpectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCaseExpectTests.swift; sourceTree = "<group>"; };
 		C17207CA20BDF80D005860BD /* BlueLine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BlueLine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17207D320BDF80D005860BD /* BlueLineTests_iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueLineTests_iOS.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17207E620BF1484005860BD /* AssertAliasesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssertAliasesTests.swift; sourceTree = "<group>"; };
@@ -60,11 +64,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		737F777F220F93500078871B /* Frameworks */ = {
+		737F779C221096E20078871B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				737F7783220F93500078871B /* BlueLine.framework in Frameworks */,
+				737F77A4221096E20078871B /* BlueLine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +106,7 @@
 				C17207CA20BDF80D005860BD /* BlueLine.framework */,
 				C17207D320BDF80D005860BD /* BlueLineTests_iOS.xctest */,
 				737F777A220F93500078871B /* BlueLine.framework */,
-				737F7782220F93500078871B /* BlueLineTests_macOS.xctest */,
+				737F779F221096E20078871B /* BlueLineTests_macOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,6 +117,7 @@
 				C17207E920BF1550005860BD /* AssertAliases.swift */,
 				C17207EE20BF4FE7005860BD /* ViewController+Lifecycle.swift */,
 				C17207F320BF55EC005860BD /* UserDefaults+Fake.swift */,
+				73DC4191221AF09100E75AEE /* XCTestCase+Expect.swift */,
 			);
 			name = Sources;
 			path = ../Sources;
@@ -124,6 +129,7 @@
 				C17207E620BF1484005860BD /* AssertAliasesTests.swift */,
 				C17207F020BF5054005860BD /* ViewControllerLifeCycleTests.swift */,
 				C17207F520BF572B005860BD /* UserDefaultsPersistentDomainTests.swift */,
+				73DC4194221AF88600E75AEE /* XCTestCaseExpectTests.swift */,
 			);
 			name = Tests;
 			path = ../Tests;
@@ -175,22 +181,22 @@
 			productReference = 737F777A220F93500078871B /* BlueLine.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		737F7781220F93500078871B /* BlueLineTests_macOS */ = {
+		737F779E221096E20078871B /* BlueLineTests_macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 737F778E220F93500078871B /* Build configuration list for PBXNativeTarget "BlueLineTests_macOS" */;
+			buildConfigurationList = 737F77A7221096E20078871B /* Build configuration list for PBXNativeTarget "BlueLineTests_macOS" */;
 			buildPhases = (
-				737F777E220F93500078871B /* Sources */,
-				737F777F220F93500078871B /* Frameworks */,
-				737F7780220F93500078871B /* Resources */,
+				737F779B221096E20078871B /* Sources */,
+				737F779C221096E20078871B /* Frameworks */,
+				737F779D221096E20078871B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				737F7785220F93500078871B /* PBXTargetDependency */,
+				737F77A6221096E20078871B /* PBXTargetDependency */,
 			);
 			name = BlueLineTests_macOS;
-			productName = BlueLine_macOSTests;
-			productReference = 737F7782220F93500078871B /* BlueLineTests_macOS.xctest */;
+			productName = BlueLineTests_macOS;
+			productReference = 737F779F221096E20078871B /* BlueLineTests_macOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		C17207C920BDF80D005860BD /* BlueLine_iOS */ = {
@@ -242,8 +248,9 @@
 					737F7779220F93500078871B = {
 						CreatedOnToolsVersion = 10.1;
 					};
-					737F7781220F93500078871B = {
+					737F779E221096E20078871B = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					C17207C920BDF80D005860BD = {
 						CreatedOnToolsVersion = 9.3.1;
@@ -269,7 +276,7 @@
 				C17207C920BDF80D005860BD /* BlueLine_iOS */,
 				C17207D220BDF80D005860BD /* BlueLineTests_iOS */,
 				737F7779220F93500078871B /* BlueLine_macOS */,
-				737F7781220F93500078871B /* BlueLineTests_macOS */,
+				737F779E221096E20078871B /* BlueLineTests_macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -282,7 +289,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		737F7780220F93500078871B /* Resources */ = {
+		737F779D221096E20078871B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -311,16 +318,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				737F7791220F93810078871B /* AssertAliases.swift in Sources */,
+				73DC4193221AF09100E75AEE /* XCTestCase+Expect.swift in Sources */,
 				737F7793220F93810078871B /* UserDefaults+Fake.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		737F777E220F93500078871B /* Sources */ = {
+		737F779B221096E20078871B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				737F7794220F93850078871B /* AssertAliasesTests.swift in Sources */,
-				737F7796220F93850078871B /* UserDefaultsPersistentDomainTests.swift in Sources */,
+				73DC4196221AF88600E75AEE /* XCTestCaseExpectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73DC4192221AF09100E75AEE /* XCTestCase+Expect.swift in Sources */,
 				C17207EA20BF1550005860BD /* AssertAliases.swift in Sources */,
 				C17207F420BF55EC005860BD /* UserDefaults+Fake.swift in Sources */,
 				C17207EF20BF4FE7005860BD /* ViewController+Lifecycle.swift in Sources */,
@@ -339,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C17207E820BF1488005860BD /* AssertAliasesTests.swift in Sources */,
+				73DC4195221AF88600E75AEE /* XCTestCaseExpectTests.swift in Sources */,
 				C17207F720BF573F005860BD /* UserDefaultsPersistentDomainTests.swift in Sources */,
 				C17207F220BF5080005860BD /* ViewControllerLifeCycleTests.swift in Sources */,
 			);
@@ -347,10 +356,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		737F7785220F93500078871B /* PBXTargetDependency */ = {
+		737F77A6221096E20078871B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 737F7779220F93500078871B /* BlueLine_macOS */;
-			targetProxy = 737F7784220F93500078871B /* PBXContainerItemProxy */;
+			targetProxy = 737F77A5221096E20078871B /* PBXContainerItemProxy */;
 		};
 		C17207D620BDF80D005860BD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -421,10 +430,10 @@
 			};
 			name = Release;
 		};
-		737F778F220F93500078871B /* Debug */ = {
+		737F77A8221096E20078871B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -438,17 +447,18 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mcmxcix.BlueLine-macOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mcmxcix.BlueLineTests-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
-		737F7790220F93500078871B /* Release */ = {
+		737F77A9221096E20078871B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -461,7 +471,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mcmxcix.BlueLine-macOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mcmxcix.BlueLineTests-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 4.2;
@@ -599,6 +609,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -629,6 +640,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -697,11 +709,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		737F778E220F93500078871B /* Build configuration list for PBXNativeTarget "BlueLineTests_macOS" */ = {
+		737F77A7221096E20078871B /* Build configuration list for PBXNativeTarget "BlueLineTests_macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				737F778F220F93500078871B /* Debug */,
-				737F7790220F93500078871B /* Release */,
+				737F77A8221096E20078871B /* Debug */,
+				737F77A9221096E20078871B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

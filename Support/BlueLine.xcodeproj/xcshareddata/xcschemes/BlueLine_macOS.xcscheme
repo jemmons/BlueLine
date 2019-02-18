@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "737F7779220F93500078871B"
-               BuildableName = "BlueLine_macOS.framework"
+               BuildableName = "BlueLine.framework"
                BlueprintName = "BlueLine_macOS"
                ReferencedContainer = "container:BlueLine.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "737F7779220F93500078871B"
-            BuildableName = "BlueLine_macOS.framework"
+            BuildableName = "BlueLine.framework"
             BlueprintName = "BlueLine_macOS"
             ReferencedContainer = "container:BlueLine.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "737F7779220F93500078871B"
-            BuildableName = "BlueLine_macOS.framework"
+            BuildableName = "BlueLine.framework"
             BlueprintName = "BlueLine_macOS"
             ReferencedContainer = "container:BlueLine.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "737F7779220F93500078871B"
-            BuildableName = "BlueLine_macOS.framework"
+            BuildableName = "BlueLine.framework"
             BlueprintName = "BlueLine_macOS"
             ReferencedContainer = "container:BlueLine.xcodeproj">
          </BuildableReference>
