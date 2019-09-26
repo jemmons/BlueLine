@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import UIKit
 
 
@@ -12,4 +13,4 @@ public extension UIViewController {
     viewDidDisappear(false)
   }
 }
-
+#endif

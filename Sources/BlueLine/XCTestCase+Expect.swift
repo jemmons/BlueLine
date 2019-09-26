@@ -4,8 +4,9 @@ import XCTest
 
 
 public extension XCTestCase {
-  func expected(_ description: String, timeout: TimeInterval = 0, ƒ: (XCTestExpectation)->Void) {
+  func expected(_ description: String, count: Int = 1, timeout: TimeInterval = 0, ƒ: (XCTestExpectation)->Void) {
     let expectation = XCTestExpectation(description: description)
+    expectation.expectedFulfillmentCount = count
     ƒ(expectation)
     wait(for: [expectation], timeout: timeout)
   }

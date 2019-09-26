@@ -33,6 +33,15 @@ class XCTestCaseExpectTests: XCTestCase {
   }
   
   
+  func testExpectedCount() {
+    expected("This to happen three times", count: 3) { should in
+      should.fulfill()
+      should.fulfill()
+      should.fulfill()
+    }
+  }
+  
+  
   func testExpectedTimeouts() {
     expected("should not time out", timeout: 2) { should in
       DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {

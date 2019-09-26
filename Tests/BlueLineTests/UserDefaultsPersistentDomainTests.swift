@@ -12,14 +12,14 @@ class UserDefaultsPersistentDomainTests: XCTestCase {
   
   override func tearDown() {
     UserDefaults.standard.removeObject(forKey: "foo")
+    UserDefaults.standard.removeObject(forKey: "baz")
   }
 
   
   func testSwapPersistentDomain() {
     let defs = UserDefaults.standard
     EQ(defs.string(forKey: "foo"), "bar")
-
-    UserDefaults.fake(forDomain: "xctest") {
+    UserDefaults.fake {
       NIL(defs.string(forKey: "foo"))
       defs.set("thud", forKey: "baz")
       EQ(defs.string(forKey: "baz"), "thud")

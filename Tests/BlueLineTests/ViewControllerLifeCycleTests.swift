@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import UIKit
 import XCTest
 import BlueLine
@@ -88,3 +89,4 @@ class ViewControllerLifeCycleTests: XCTestCase {
   }
   
 }
+#endif
